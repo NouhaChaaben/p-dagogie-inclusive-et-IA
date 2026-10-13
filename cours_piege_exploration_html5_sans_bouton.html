@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 : Les Fondements de la Pédagogie Inclusive en Ligne</title>
+    <!-- Tailwind CSS pour la mise en page de l'interface LMS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes de l'interface -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Styles simulant les pieges d'accessibilite (Faux titres et contraste insuffisant) */
+        .text-low-contrast {
+            color: #a3a3a3 !important; /* Ratio de contraste echoue : ~1.8:1 sur fond blanc */
+        }
+        .fake-heading-1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+        .fake-heading-2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #334155;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Contenu Principal du Cours (Version Brute pour la Phase 1 d'exploration) -->
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 py-6">
+        
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
+            
+            <!-- En-tête du document -->
+            <div class="border-b border-slate-100 pb-4 mb-6">
+                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-2">Support de cours N°1</span>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900">Module 1 : Les Fondements de la Pédagogie Inclusive en Ligne</h1>
+                <p class="text-sm text-slate-500 mt-1">Dernière mise à jour : Octobre 2026 · Enseignant : Équipe Technopédagogique</p>
+            </div>
+
+            <!-- PIÈGE 1 : Fausse structure de titre (Simple span sans balise H1/H2) -->
+            <div>
+                <span class="fake-heading-1">1. Cadre théorique et enjeux institutionnels</span>
+            </div>
+
+            <!-- PIÈGE 4 : Pâté de texte très dense et jargon complexe (Surcharge cognitive) -->
+            <div>
+                <p class="text-justify text-slate-700 leading-relaxed mb-4">
+                    L'alignement pédagogique selon Biggs combiné aux principes de la Conception Universelle de l'Apprentissage (CUA) requiert la prise en compte de la neurodiversité des apprenants dès la phase d'ingénierie. Dans le cadre de la numérisation des ressources universitaires, l'imposabilité des standards d'accessibilité exige la remédiation de l'ergonomie cognitive pour pallier les déficits d'attention visuo-spatiale, les dysfonctions exécutives et les limitations sensorielles. Il est indispensable d'articuler la flexibilité des représentations avec l'affordance des interfaces LMS afin de garantir l'équité des chances dans l'accès aux savoirs disciplinaires complexes.
+                </p>
+            </div>
+
+            <!-- PIÈGE 2 : Texte à contraste très faible (#a3a3a3) + Consigne basée uniquement sur la couleur -->
+            <div class="my-6 p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <p class="text-low-contrast font-medium mb-3">
+                    REMARQUE IMPORTANTE POUR VOTRE ENSEIGNEMENT ET VOTRE PRATIQUE :
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                    <!-- Boîte verte -->
+                    <div style="background-color: #d1fae5; color: #065f46;" class="p-3 rounded border border-emerald-300">
+                        Attention : Les recommandations présentées dans ce bloc sont facultatives pour vos espaces de cours.
+                    </div>
+                    <!-- Boîte rose clair -->
+                    <div style="background-color: #ffe4e6; color: #9f1239;" class="p-3 rounded border border-rose-300">
+                        Attention : Les directives présentées dans ce bloc sont OBLIGATOIRES à appliquer immédiatement !
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIÈGE 1 (Suite) : Deuxième faux titre -->
+            <div>
+                <span class="fake-heading-2">2. Tableau comparatif des approches pédagogiques</span>
+            </div>
+
+            <p class="text-sm text-slate-600 mb-3">Lisez attentivement la synthèse comparative suivante :</p>
+
+            <!-- PIÈGE 5 : Tableau non structuré (Absence de balises <th>) -->
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-sm text-left border-collapse border border-slate-300">
+                    <tbody>
+                        <!-- Fausse ligne d'en-tête créée avec des td au lieu de th -->
+                        <tr class="bg-slate-200 font-bold text-slate-800">
+                            <td class="border border-slate-300 p-2.5">Approche</td>
+                            <td class="border border-slate-300 p-2.5">Cible prioritaire</td>
+                            <td class="border border-slate-300 p-2.5">Flexibilité des supports</td>
+                            <td class="border border-slate-300 p-2.5">Évaluation</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-slate-300 p-2.5 font-semibold">Pédagogie Traditionnelle</td>
+                            <td class="border border-slate-300 p-2.5">Apprenant "moyen"</td>
+                            <td class="border border-slate-300 p-2.5">Unique (Format papier/PDF)</td>
+                            <td class="border border-slate-300 p-2.5">Identique pour tous</td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="border border-slate-300 p-2.5 font-semibold">Pédagogie Différenciée</td>
+                            <td class="border border-slate-300 p-2.5">Étudiants à besoins spécifiques</td>
+                            <td class="border border-slate-300 p-2.5">Adaptations au cas par cas</td>
+                            <td class="border border-slate-300 p-2.5">Adaptée sur demande</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-slate-300 p-2.5 font-semibold">Conception Universelle (CUA)</td>
+                            <td class="border border-slate-300 p-2.5">Ensemble des apprenants</td>
+                            <td class="border border-slate-300 p-2.5">Multiples formats natifs (Texte/Audio/Interactif)</td>
+                            <td class="border border-slate-300 p-2.5">Choix des modalités</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- PIÈGE 1 (Suite) : Troisième faux titre -->
+            <div>
+                <span class="fake-heading-2">3. Les trois piliers de la CUA</span>
+            </div>
+
+            <p class="text-sm text-slate-600 mb-4">
+                L'organisation des réseaux cérébraux impliqués dans l'apprentissage s'articule autour de trois grands principes fondamentaux représentés sur le schéma ci-dessous :
+            </p>
+
+            <!-- PIÈGE 3 : Image complexes sans Alt-Text descriptif (alt="Figure 1 : Schéma explicatif.") -->
+            <div class="my-6 text-center bg-slate-50 p-4 rounded-lg border border-slate-200">
+                <svg class="mx-auto max-w-md w-full h-48 bg-white rounded shadow-sm p-2 border border-slate-200" viewBox="0 0 400 180">
+                    <rect x="10" y="20" width="110" height="140" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+                    <text x="65" y="50" font-size="12" font-weight="bold" text-anchor="middle" fill="#3730a3">Engagement</text>
+                    <text x="65" y="80" font-size="10" text-anchor="middle" fill="#4338ca">Le "POURQUOI"</text>
+                    <circle cx="65" cy="120" r="18" fill="#6366f1"/>
+                    <text x="65" y="125" font-size="16" text-anchor="middle" fill="white">🎯</text>
+
+                    <rect x="145" y="20" width="110" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+                    <text x="200" y="50" font-size="12" font-weight="bold" text-anchor="middle" fill="#14532d">Représentation</text>
+                    <text x="200" y="80" font-size="10" text-anchor="middle" fill="#15803d">Le "QUOI"</text>
+                    <circle cx="200" cy="120" r="18" fill="#22c55e"/>
+                    <text x="200" y="125" font-size="16" text-anchor="middle" fill="white">🧠</text>
+
+                    <rect x="280" y="20" width="110" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                    <text x="335" y="50" font-size="12" font-weight="bold" text-anchor="middle" fill="#78350f">Action & Expr.</text>
+                    <text x="335" y="80" font-size="10" text-anchor="middle" fill="#b45309">Le "COMMENT"</text>
+                    <circle cx="335" cy="120" r="18" fill="#f59e0b"/>
+                    <text x="335" y="125" font-size="16" text-anchor="middle" fill="white">🛠️</text>
+                </svg>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'></svg>" alt="Figure 1 : Schéma explicatif." class="block mx-auto text-xs text-slate-400 italic mt-2" />
+                <p class="text-xs text-slate-500 italic mt-1">Figure 1 : Schéma explicatif.</p>
+            </div>
+
+            <!-- PIÈGE 6 : Liens non explicites ("cliquez ici") & URL brute de 3 lignes -->
+            <div class="my-6 space-y-3 text-sm">
+                <p class="text-slate-700">
+                    Pour approfondir la démarche d'aménagement de vos cours et consulter la directive européenne sur l'accessibilité des sites publics, 
+                    <a href="https://fr.wikipedia.org/wiki/Accessibilit%C3%A9_num%C3%A9rique" class="text-blue-600 underline hover:text-blue-800">cliquez ici</a>.
+                </p>
+                <p class="text-slate-700">
+                    Vous pouvez également télécharger le guide complet du ministère en CLIQUANT ICI ou en recopiant l'adresse suivante dans votre navigateur :<br>
+                    <span class="font-mono text-xs text-slate-500 break-all bg-slate-100 p-1 rounded inline-block mt-1">
+                        http://www.enseignement-superieur.tn/upload/documents/pedagogie/inclusive/2026/guide_complet_v2_final_imprimable_version_exhaustive_septembre_2026.pdf
+                    </span>
+                </p>
+            </div>
+
+            <!-- PIÈGE 7 : Citation en anglais sans déclaration de langue (Absence de lang="en") -->
+            <div class="mt-6 p-4 bg-amber-50 rounded-lg border border-amber-200">
+                <p class="text-xs font-bold text-amber-900 uppercase tracking-wide mb-1">Citation de référence (Framework CAST) :</p>
+                <p class="text-slate-800 italic font-serif">
+                    “Universal Design for Learning guidelines provide a set of concrete suggestions that can be applied to any discipline or domain to ensure that all learners can access and participate in meaningful, challenging learning opportunities.”
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Pied de page LMS standard -->
+    <footer class="bg-slate-800 text-slate-400 text-xs py-4 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <p>Atelier FCIERI 2026 · Design Pédagogique Inclusif & IA · Support de démonstration</p>
+        </div>
+    </footer>
+
+</body>
+</html>
